@@ -12,10 +12,28 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: linear-gradient(145deg ,#430a58, #04719a);
+	background: linear-gradient(145deg, #430a58, #04719a);
+}
 
+ul{
+	position: relative;
+		transform: skewY(-15deg)
 
+}
+ul li{
+	position: relative;
+	list-style: none;
+	widows: 250px;
+	background: #5b85f7;
+	padding: 15px;
+	z-index: var(--i);
+	transition: .5s;
+	box-shadow: 0px 0px 5px #fff;
 
+}
 
-
+ul li:hover{
+	background: #7396f5;
+	transform: translateX(-45px);
+	box-shadow: 0px 0px 5px #fff;
 }
