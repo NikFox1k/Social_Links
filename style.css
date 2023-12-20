@@ -15,12 +15,12 @@ body {
 	background: linear-gradient(145deg, #430a58, #04719a);
 }
 
-ul{
+ul {
 	position: relative;
-		transform: skewY(-15deg)
-
+	transform: skewY(-15deg)
 }
-ul li{
+
+ul li {
 	position: relative;
 	list-style: none;
 	widows: 250px;
@@ -32,8 +32,39 @@ ul li{
 
 }
 
-ul li:hover{
+ul li:hover {
 	background: #7396f5;
 	transform: translateX(-45px);
 	box-shadow: 0px 0px 5px #fff;
 }
+
+ul li::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	background: #5b85f9;
+	transform-origin: bottom;
+	transform: skewX(45deg);
+	top:-40px;
+	left: 0;
+	box-shadow: 0px 0px 5px #fff;
+	transition: .5s;
+}
+ul li::after{
+	content: "";
+	position: absolute;
+	width: 40px;
+	height: 80px;
+	background: #5b85f9;
+	transform-origin: bottom;
+	transform: skewy(45deg);
+	top:-22px;
+	left: -40px;
+	box-shadow: 0px 0px 5px #fff;
+	transition: .5s;
+
+}
+
+
+
