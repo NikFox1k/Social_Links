@@ -66,5 +66,30 @@ ul li::after{
 
 }
 
+ul li a{
+
+	text-decoration:  none;
+	color:#b7b7b7;
+	letter-spacing: 0.1em
+}
+ul li:hover a{
+	color: rebeccapurple
+}
+
+ul li:last-child::before{
+	box-shadow: -150px 150px 20px rgba(0, 0, 0, 0.38)
+}
+/*ul li img{
+	position: absolute;
+	top: 5px;
+	left: -35px;
+	bottom: 10px;
+	width: 30px;
+	height: 70%;
+	transform-origin: right;
+	transform: skewY(45deg)
+}*/
+
+
 
 
